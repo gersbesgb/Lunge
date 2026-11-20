@@ -63,7 +63,16 @@ while True:
             tick_delay = random.randint(10,20)
 
             print(f"Macro Activated {counter}")
-            counter += 1
+            counter += 
+
+            if counter == '1':
+                mouse.click()   
+                time.sleep(tick_delay / 1000.0)
+                keyboard.press_and_release(Sbind)
+    
+                time.sleep(delay_ms /1000.0)
+                keyboard.press_and_release(NCbind)
+                time.sleep(delay_ms / 1000.0)
 
             keyboard.press_and_release(NCbind)
             time.sleep(0.27)
