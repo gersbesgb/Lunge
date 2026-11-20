@@ -74,13 +74,14 @@ while True:
                 keyboard.press_and_release(NCbind)
                 time.sleep(delay_ms / 1000.0)
 
-            keyboard.press_and_release(NCbind)
-            time.sleep(0.27)
-            mouse.click()   
-            
-            time.sleep(tick_delay / 1000.0)
-            keyboard.press_and_release(Sbind)
-
-            time.sleep(delay_ms /1000.0)
-            keyboard.press_and_release(NCbind)
-            time.sleep(delay_ms / 1000.0)
+            else:
+                keyboard.press_and_release(NCbind)
+                time.sleep(0.27)
+                mouse.click()   
+                
+                time.sleep(tick_delay / 1000.0)
+                keyboard.press_and_release(Sbind)
+    
+                time.sleep(delay_ms /1000.0)
+                keyboard.press_and_release(NCbind)
+                time.sleep(delay_ms / 1000.0)
